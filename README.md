@@ -45,3 +45,7 @@ skeleton
 - `gulp cache`    - отчистить кэш gulp
 - `gulp cleanimg`  - очистить папку ./dist/img
 - `gulp rsync`  - молниеносный деплой на сервер
+
+## Контакты
+
+Telegram:  @alexandershvets
