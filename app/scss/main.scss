@@ -1,0 +1,90 @@
+@import "vars";
+@import "smart-grid";
+@import "fonts";
+@import "libs";
+
+
+///////////////////////
+// GLOBAL STYLES
+///////////////////////
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+ul li {
+	list-style: none;
+}
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	background-color: $body-bg;
+}
+
+.wrapper {
+	@include wrapper();
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.example-img {
+	width: 100%;
+}
+
+.parent { // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+}
+
+/////////////
+//BLOCKS
+/////////////
+@import "blocks/section";
+

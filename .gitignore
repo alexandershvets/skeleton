@@ -1,0 +1,11 @@
+/node_modules/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
+!/.gitignore
+!/gulpfile.js
+!/package.json
+!/.bowerrc
+!/.npmrc
+!/**/package-lock.json
+
