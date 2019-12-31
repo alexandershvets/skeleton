@@ -5,6 +5,7 @@
 - возможность выбирать препроцессор, **sass / scss**
 - в сборку интегрирована сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) от [Дмитрия Лаврика](https://dmitrylavrik.ru/)
 - в сборку входит скрипт отложенной загрузки изображений [Lazy Load](https://www.youtube.com/watch?v=lRu3e3Vbgy0) от [Web Design Master](https://webdesign-master.ru/)
+- оптимизация изображений под [google page speed](https://developers.google.com/speed/pagespeed/insights/)
 
 ## Файловая структура
 
