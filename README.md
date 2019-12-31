@@ -15,15 +15,15 @@ skeleton
 │   ├── fonts
 │   ├── img
 │   ├── js
-│	  ├── libs
+│   ├── libs
 │   ├── sass
 │   ├── scss
-│	  └── views
+│   └── views
 ├── .bowerrc
 ├── .gitignore
 ├── .npmrc
 ├── gulpfile.js
-├──	gulpfile.smart-grid.js
+├── gulpfile.smart-grid.js
 └── package.json
 ```
 
