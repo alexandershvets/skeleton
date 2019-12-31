@@ -1,7 +1,7 @@
 {
-  "name": "st",
+  "name": "skeleton",
   "version": "1.0.0",
-  "description": "OptimizedHTML - Start HTML Template",
+  "description": "Startup template. SASS/SCSS, smart-grid version",
   "main": "gulpfile.js",
   "keywords": [],
   "author": "Alexander Shvets",
