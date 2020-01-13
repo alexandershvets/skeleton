@@ -21,7 +21,7 @@ $offset_sm_one_side: ($offset_sm / 2);
 $fields: 15px;
 $fields_lg: 15px;
 
-@mixin wrapper-full(){
+@mixin container-full(){
 	padding-left: $fields;
 	padding-right: $fields;
 
@@ -41,10 +41,10 @@ $fields_lg: 15px;
 	#{$type}-right: $offset_one_side;
 }
 
-@mixin wrapper(){
+@mixin container(){
 	max-width: 1200px;
 	margin: 0 auto;
-	@include wrapper-full();
+	@include container-full();
 }
 
 @mixin row-flex(){
@@ -407,7 +407,7 @@ $fields_lg: 15px;
 	
 	> div{
 		height: inherit;
-		@include wrapper();
+		@include container();
 		
 		> div{
 			height: inherit;

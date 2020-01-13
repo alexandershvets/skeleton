@@ -13,3 +13,44 @@
 		}
 	}
 }
+
+@mixin anim($time, $delay) {
+	transition: all $time ease $delay;
+}
+
+@mixin anim_cubic($time, $delay) {
+	transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+}
+
+@mixin rotate($deg) {
+	transform: rotate($deg);
+}
+
+@mixin scale($num) {
+	transform: scale($num);
+}
+
+@mixin skew($num) {
+	transform: skewX($num);
+}
+
+@mixin cnt($h) {
+	display: flex;
+	flex-direction: column;
+	height: $h;
+	text-align: center;
+	align-items: stretch;
+	justify-content: center;
+}
+
+@mixin tr($x, $y, $z) {
+	transform: translate3d($x, $y, $z);
+}
+
+@mixin flexbox() {
+	font-size: 0;
+}
+
+@mixin flexorder($val) {
+	order: $val;
+}

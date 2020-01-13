@@ -24,7 +24,7 @@ module.exports = {
 		}
 	},
 	mixinNames: {
-		container: "wrapper",
+		container: "container",
 		row: "row-flex",
 		rowFloat: "row-float",
 		rowInlineBlock: "row-ib",
@@ -48,5 +48,5 @@ module.exports = {
 	},
 	tab: "	",
 	defaultMediaDevice: "screen",
-	detailedCalc: false // включить отображение формулы calc в файле css. Но будут глюки в IE 11 при ресайзе экрана
+	detailedCalc: false // включить отображение формулы calc в файле css. Но тогда будут глюки в IE 11 при ресайзе экрана
 };

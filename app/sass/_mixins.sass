@@ -10,3 +10,36 @@
 		@else
 			src: url('#{$file-path}.eot')
 			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+=anim($time,$delay)
+	transition: all $time ease $delay
+
+=anim_cubic($time, $delay)
+	transition: all $time cubic-bezier(0.68,-0.55,0.265,1.55) $delay
+
+=rotate($deg)
+	transform: rotate($deg)
+
+=scale($num)
+	transform: scale($num)
+
+=skew($num)
+	transform: skewX($num)
+
+=cnt($h)
+	display: flex
+	flex-direction: column
+	height: $h
+	text-align: center
+	align-items: stretch
+	justify-content: center
+
+=tr($x,$y,$z)
+	transform: translate3d($x, $y, $z)
+
+=flexbox()
+	display: flex
+	font-size: 0
+
+=flexorder($val)
+	order: $val
