@@ -31,35 +31,38 @@
 }
 
 //====================================================================================================
+.visualy-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+
+//====================================================================================================
 .slick-slider {
 	position: relative;
-
 	.slick-track,
 	.slick-list {
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 	.slick-list {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
 	}
-
 	.slick-track {
 		position: relative;
 		width: 100%;
 	}
-
 	.slick-slide {
 		overflow: hidden;
 		float: left;
 		position: relative;
 	}
-
 	.slick-dots {
 		li {
 			button {}
@@ -70,4 +73,5 @@
 		}
 	}
 }
+
 //====================================================================================================
