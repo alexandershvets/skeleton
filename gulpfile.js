@@ -53,6 +53,7 @@ let paths = {
 	scripts: {
 		src: [
 			'./node_modules/jquery/dist/jquery.min.js',
+			// './node_modules/slick-carousel/slick/slick.min.js', // npm i slick-carousel
 			// './app/js/lazy.js', // Lazy Load, раскоментировать при необходимости отложенной загрузки изображений
 			'./app/js/common.js' // всегда в конце
 		],
@@ -64,8 +65,8 @@ let paths = {
 	},
 	images: {
 		src: [
-			'./app/img/**/*.{jpg,jpeg,png,gif,tiff}',
-			'!./app/img/favicon/*.{jpg,jpeg,png,gif,tiff}'
+			'./app/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+			'!./app/img/favicon/*.{jpg,jpeg,png,gif,tiff,svg}'
 		],
 		dist: './dist/img/',
 		watch: './app/img/**/*'
