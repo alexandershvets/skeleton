@@ -38,6 +38,8 @@ $(document).ready(function () {
 	if ($('.slider').length > 0) { //идет проверка, есть ли такой слайдер, если есть то включаем
 		$('.slider').slick({
 			arrows: true,
+			// nextArrow: '<button type="button" class="slick-next"></button>',
+			// prevArrow: '<button type="button" class="slick-prev"></button>',
 			dots: true,
 			adaptiveHeight: true,
 			slidesToShow: 3,
@@ -84,8 +86,9 @@ $(document).ready(function () {
 				}
 			],
 			mobileFirst: false, // по умолчанию false. Если true, то параметр поменяет значение с max-width на min-width
-			// appendArrows: $('.content'), // данный параметр переместит стрелки, в какой-то элемент на странице (например в див). Чтобы параметр работал, указать класс элемента в который нужно поместить стрелки. НО! Стрелки перенесутся без стилей.
-			// appendDots: $('.content'), // работает аналогично параметру appendArrows
+			// appendArrows: $('.objects-controls'), // данный параметр переместит стрелки, в какой-то элемент на странице (например в див). Чтобы параметр работал, указать класс элемента в который нужно поместить стрелки. НО! Стрелки перенесутся без стилей.
+			// appendDots: $('.objects-controls') // работает аналогично параметру appendArrows
+		
 		});
 	}
 

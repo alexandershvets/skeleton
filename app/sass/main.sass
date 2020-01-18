@@ -4,9 +4,9 @@
 @import fonts
 @import libs
 
-///////////////////////
+//////////////////
 // GLOBAL STYLES
-///////////////////////
+//////////////////
 
 html
 	box-sizing: border-box
@@ -59,17 +59,22 @@ body
 	color: $text
 	background-color: $body-bg
 
+.wrapper
+	width: 100%
+	min-height: 100%
+	overflow: hidden
+
 .container
 	+container()
 
 
-// UI
-@import ui
-
-/////////////
-// BLOCKS
-/////////////
+/////////////////////////////////
+// PAGES AND ELEMENT STYLE FILES
+/////////////////////////////////
 @import "blocks/header"
-
 @import "blocks/footer"
 
+//////////////////////////////////////
+// UI, FORMS AND READY-CLASSES STYLES
+//////////////////////////////////////
+@import ui
