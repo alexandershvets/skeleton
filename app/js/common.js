@@ -29,11 +29,30 @@ $(document).ready(function () {
 
 	// iconMenu.addEventListener("click", function () {
 	// 	iconMenu.classList.toggle("active");
-	// 	body.classList.toggle("lock");
+	// 	body.classList.toggle("lock"); //запрет на скролл контента при открытом меню. В стилях добавить: body.lock {overflow: hidden}
 	// 	menuBody.classList.toggle("active");
 	// });
 
 	//====================================================================================================
+	// SPOILER
+	$('.block__title').click(function (event) {
+		if ($('.block').hasClass('one')) { // если нужно скрывать открытые спойлеры при открытии одного, нужно добавить класс .one родителю спойлеров
+			$('.block__title').not($(this)).removeClass('active'); // у всех, кроме нажатого спойлера, убрать класс .active
+			$('.block__text').not($(this).next()).slideUp(300); // у всех, кроме нажатого спойлера, скрыть текст
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+
+	//====================================================================================================
+	//UP
+	$('#up').click(function (event) {
+		$('body, html').animate({
+			scrollTop: 0
+		}, 300);
+	});
+
+	//====================================================================================================
+
 	//SLIDERS
 	if ($('.slider').length > 0) { //идет проверка, есть ли такой слайдер, если есть то включаем
 		$('.slider').slick({

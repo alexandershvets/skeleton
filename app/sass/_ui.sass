@@ -35,6 +35,7 @@
 	overflow: hidden
 
 //====================================================================================================
+// SLICK-SLIDER
 // Если слайдер находится внутри flex эл-та или сам явл-ся flex эл-ом,
 // нужно обязательно указать flex эл-ту свойство min-width: 0,
 // иначе слайдер работать не будет
@@ -117,5 +118,43 @@
 			max-width: 100%
 		&.slick-center
 			opacity: 1
+
+//====================================================================================================
+// SPOILER
+.spollers
+	&__item
+		margin-bottom: 20px
+	&__title
+		text-transform: uppercase
+		letter-spacing: 2px
+		position: relative
+		padding: 0 0 0 30px
+		cursor: pointer
+		&::before,
+		&::after
+			content: ''
+			width: 10px
+			height: 1px
+			background-color: #000
+			position: absolute
+			top: 8px
+			transition: all .3s ease 0s
+		&::before
+			transform: rotate(40deg)
+			left: 0
+		&::after
+			transform: rotate(-40deg)
+			left: 7px
+		&.active
+			&::before,
+			&::after
+				background-color: red
+			&::before
+				transform: rotate(-40deg)
+			&::after
+				transform: rotate(40deg)
+	&__text
+		display: none
+		padding: 10px 0 0 0
 
 //====================================================================================================
